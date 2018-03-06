@@ -35,7 +35,7 @@
     "geojson-validation": "^0.1.5",
     "good": "^6.3.0",
     "good-console": "^5.0.2",
-    "hapi": "^9.3.0",
+    "hapi": "^17.0.0",
     "hapi-mongodb": "~3.1.0",
     "hapi-paginate": "^0.2.0",
     "hapi-response-meta": "^0.2.0",
