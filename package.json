@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "node index.js",
     "test": "./node_modules/mocha/bin/mocha test && npm run docs",
-    "docs": "./node_modules/apidoc/bin/apidoc -i app/ -o docs_tmp/"
+    "docs": "./node_modules/apidoc/bin/apidoc -i app/ -o docs_tmp/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,7 @@
     "catbox-redis": "^1.0.5",
     "csv": "^0.4.2",
     "elastic.js": "^1.2.0",
-    "elasticsearch": "^8.2.0",
+    "elasticsearch": "^12.0.0",
     "envloader": "0.0.2",
     "geojson-validation": "^0.1.5",
     "good": "^6.3.0",
@@ -41,7 +43,7 @@
     "hapi-response-meta": "^0.2.0",
     "hapi-router": "^3.3.0",
     "landsat-meta-updater": "^0.5.1",
-    "lodash": "^3.9.3",
+    "lodash": "^4.17.5",
     "moment": "^2.10.6",
     "mongodb": "^2.0.42",
     "monquery": "^0.2.0",
@@ -50,7 +52,8 @@
     "tmp": "0.0.27",
     "turf-area": "^1.1.1",
     "turf-extent": "^1.0.4",
-    "validator": "^4.0.5"
+    "validator": "^4.0.5",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "apidoc": "^0.13.1",
@@ -64,5 +67,6 @@
       "title": "Installation",
       "filename": "README.md"
     }
-  }
+  },
+  "snyk": true
 }
