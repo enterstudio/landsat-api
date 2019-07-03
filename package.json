@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "node index.js",
     "test": "./node_modules/mocha/bin/mocha test && npm run docs",
-    "docs": "./node_modules/apidoc/bin/apidoc -i app/ -o docs_tmp/"
+    "docs": "./node_modules/apidoc/bin/apidoc -i app/ -o docs_tmp/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -50,7 +52,8 @@
     "tmp": "0.0.27",
     "turf-area": "^1.1.1",
     "turf-extent": "^1.0.4",
-    "validator": "^4.0.5"
+    "validator": "^4.0.5",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "apidoc": "^0.13.1",
@@ -64,5 +67,6 @@
       "title": "Installation",
       "filename": "README.md"
     }
-  }
+  },
+  "snyk": true
 }
