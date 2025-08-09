@@ -47,7 +47,7 @@
     "monquery": "^0.2.0",
     "nock": "^2.9.1",
     "request": "^2.57.0",
-    "tmp": "0.0.27",
+    "tmp": "0.2.4",
     "turf-area": "^1.1.1",
     "turf-extent": "^1.0.4",
     "validator": "^4.0.5"
